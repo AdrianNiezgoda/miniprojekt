@@ -2,7 +2,7 @@
 
 $color-light: #fff;
 $color-dark: #000000;
-$color-one: #fffc61;
+$color-one: #dbbc0b;
 $color-two: #cccccc;
 
 /* Global */
@@ -23,6 +23,15 @@ body {
     max-width: 1140px;
     margin: auto;
     padding: 0 20px;
+}
+
+.section-title {
+    font-size: 36px;
+    margin: 0 0 72px 20px;
+
+    p{
+        font-size: 18px;
+    }
 }
 
 /* Navigation */
@@ -108,3 +117,25 @@ body {
     color: $color-light;
     font-size: 48px;
 }
+
+/* Services */
+
+.row  {
+    flex: 0 0 33.333%;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+
+    i {
+        font-size: 30px;
+        color: $color-one;
+        background: $color-light;
+        border: 2px solid $color-one;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        line-height: 60px;
+    }
+}
+
