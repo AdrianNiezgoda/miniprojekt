@@ -10,6 +10,7 @@ body {
     margin: 0;
     font-size: 16px;
     line-height: 1.7;
+    text-align: center;
 }
 
 .container-flex { 
@@ -26,7 +27,6 @@ body {
 
 /* Navigation */
 .navigation {
-    background: $color-two;
     padding: 12px 0;
     h1 {
         color: $color-one;
@@ -45,8 +45,66 @@ body {
             a {
                 text-decoration: none;
                 color: $color-light;
-                font-size: 18px;
+                font-size: 22px;
             }
         }
     }
+}
+
+/* Spalsh */
+.splash {
+    height: 100vh; 
+    position: relative;
+    background-image: url("https://images.pexels.com/photos/6134552/pexels-photo-6134552.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;  
+    background-attachment: fixed;
+}
+
+.splash-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.page-title {
+    color: $color-light;
+    font-size: 60px;
+    margin: 48px 0 0 0;
+    letter-spacing: 2px;
+}
+
+.page-subtitle {
+    color: $color-light;
+    font-size: 20px;
+    margin: 48px 0 0 0;
+    letter-spacing: 2px;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 160px;
+    margin: 24px auto 10px auto;
+    padding: 16px;
+    border-radius: 5px;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-width: 2px;
+    border-style: solid;
+    color:$color-dark;
+    border-color: $color-one;
+    background: $color-one;
+}
+
+.page-title {
+    color: $color-light;
+    font-size: 48px;
+}
+
+.page-subtitle {
+    color: $color-light;
+    font-size: 48px;
 }
