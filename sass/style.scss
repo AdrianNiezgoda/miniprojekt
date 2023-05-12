@@ -15,7 +15,7 @@ body {
 .container-flex { 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .container {
@@ -143,6 +143,7 @@ body {
 /* portfolio */
 .portfolio {
     background: $color-two;
+    padding-bottom: 72px;
 }
 
 .row-portfolio  {
@@ -151,18 +152,45 @@ body {
     flex-direction: column;
     display: flex;
     background: $color-light;
-    max-width: 300px;
+    max-width: 350px;
     max-height: 410px;
-    margin-bottom: 96px;
+    margin-bottom: 48px;
 }
 
 .image {
-    width: 300px;
+    width: 350px;
     height: 300px;
 
     img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+}
+/* footer */
+
+.foot {
+    margin: 48px 0;
+    text-align: center;
+    position: relative;
+    .links{
+        margin: auto;
+        padding-right: 205px;
+    }
+     li {
+        display: inline;
+        color: $color-light;
+        background: $color-two;
+        font-size: 0;
+        text-align: center;
+    }
+    i {
+        font-size: 20px;
+        color: $color-light;
+        background: $color-dark;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        line-height: 50px;
     }
 }
