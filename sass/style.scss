@@ -3,13 +3,12 @@
 $color-light: #fff;
 $color-dark: #000000;
 $color-one: #dbbc0b;
-$color-two: #cccccc;
+$color-two: #d4d4d4;
 
 /* Global */
 body {
     margin: 0;
     font-size: 16px;
-    line-height: 1.7;
     text-align: center;
 }
 
@@ -28,6 +27,7 @@ body {
 .section-title {
     font-size: 36px;
     margin: 0 0 72px 20px;
+    padding-top: 72px;
 
     p{
         font-size: 18px;
@@ -126,6 +126,7 @@ body {
     flex-direction: column;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 72px;
 
     i {
         font-size: 30px;
@@ -139,3 +140,29 @@ body {
     }
 }
 
+/* portfolio */
+.portfolio {
+    background: $color-two;
+}
+
+.row-portfolio  {
+    flex: 0 0 33.333%;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    background: $color-light;
+    max-width: 300px;
+    max-height: 410px;
+    margin-bottom: 96px;
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
